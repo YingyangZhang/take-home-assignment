@@ -234,7 +234,7 @@ img {
 
 .notification-text {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: var(--medium-font);
   transition: .3s;
 }
 
@@ -361,6 +361,9 @@ img {
 }
 
 .conversation-container {
+  color: #000;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   grid-column: 2/6;
   grid-row: 1/4;
@@ -370,6 +373,8 @@ img {
 
 .conversation-container .title {
   background-color: #fff;
+  margin-bottom: 0;
+  border-bottom: .5px solid #000;
 }
 
 .title span {
@@ -380,4 +385,59 @@ img {
 
 .title span:hover {
   opacity: .6;
+}
+
+.conversation {
+  overflow: scroll;
+  margin-top: auto;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.conversation::-webkit-scrollbar {
+  display: none; 
+}
+
+.message-container-right {
+  text-align: right;
+}
+
+.content-left,
+.content-right {
+  color: #fff;
+  display: inline-block;
+  background-color: var(--purple);
+  padding: .8rem 1.2rem;
+  font-size: var(--reg-font);
+  border-radius: 50px 0px 50px 50px;
+  margin-top: .5rem;
+}
+
+.content-left {
+  color: #000;
+  background-color: var(--pink);
+  border-radius: 0px 50px 50px 50px;
+}
+
+.user-input-container {
+  display: flex;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 1.8rem;
+  border: .5px solid #000;
+  border-radius: 50px;
+}
+
+.user-input-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  margin-left: var(--small-gap);
+}
+
+.send-btn {
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 50px;
+  background-color: #000;
 }
