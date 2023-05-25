@@ -15,11 +15,7 @@
 /* ---------- CSS Variables ---------- */
 
 :root {
-  --big-font: 1.37rem;
   --reg-font: 1rem;
-  --small-font: .8rem;
-
-  --gap: 2.3rem;
 }
 
 /* ---------- General ---------- */
@@ -39,13 +35,76 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* ---------- Header ---------- */
+
+.header-container {
+  color: #fff;
+  padding: 2.5rem;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: flex-start;
+  column-gap: .8rem;
+}
+
+.logo-container p {
+  font-family: 'logo-semi-bold';
+  display: inline-block;
+  font-size: 2.5rem;
+  letter-spacing: -.1rem;
+}
+
+.logo-container span {
+  font-family: 'logo-reg';
+  font-size: .81rem;
+  color: #000;
+  background-color: #fff;
+  padding: 2px 5px 0px 5px;
+  border-radius: 50px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 3.5rem;
+}
+
+.menu ul {
+  font-weight: 500;
+  font-size: var(--reg-font);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.menu ul:hover {
+  opacity: .6;
+}
+
+.current-user-name {
+  color: #000;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 9px 20px;
 }
