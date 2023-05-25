@@ -21,7 +21,7 @@
   --medium-font: 1.2rem;
   --big-font: 1.4rem;
 
-  --box-padding: 1.2rem 1.8rem;
+  --box-padding: 1.4rem 1.8rem;
 
   --small-gap: 1rem;
 
@@ -46,6 +46,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 li {
@@ -193,7 +194,7 @@ img {
   position: sticky;
   top: 0;
   background-color: var(--pink);
-  padding: 1.2rem 0rem;
+  padding: 1.4rem 0rem;
   z-index: 50;
 }
 
@@ -440,4 +441,97 @@ img {
   padding: 7px 20px;
   border-radius: 50px;
   background-color: #000;
+  cursor: pointer;
+}
+
+/* ---------- Search ---------- */
+
+.search-container {
+  height: 100vh;
+  padding: 12rem 2.5rem 2.5rem 2.5rem;
+}
+
+.search {
+  padding: var(--box-padding);
+  height: 100%;
+  border-radius: 30px;
+  background-color: #fff;  
+}
+
+
+.search-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2.7rem;
+}
+
+.search-input-container {
+  display: flex;
+  width: 30%;
+  border: .5px solid #000;
+  border-radius: 50px;
+}
+
+.search-header .title {
+  background-color: #fff;
+}
+
+.search-input-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  margin-left: var(--small-gap);
+}
+
+.search-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.friends-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 340px));
+  gap: var(--small-gap);
+}
+
+.friend {
+  background-color: var(--purple);
+  padding: var(--box-padding);
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.friend:hover {
+  filter: brightness(0.9);
+}
+
+.friend .user {
+  margin-top: 0;
+  border-bottom: .5px solid #443a88;
+  padding-bottom: var(--small-gap);
+  margin-bottom: var(--small-gap);
+}
+
+.friend .user p{
+  font-size: var(--medium-font);
+}
+
+.details {
+  font-size: var(--small-font);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.search-btn {
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 50px;
+  background-color: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

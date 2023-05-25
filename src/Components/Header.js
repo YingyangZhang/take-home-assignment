@@ -1,19 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
         <div className="header-container">
             <div className="nav-container">
-                <div className="logo-container">
+                <Link to='/' exact='true' className="logo-container">
                     <p>CHAT BOX</p>
                     <span>DEMO</span>
-                </div>
+                </Link>
 
                 <div className="menu-container">
                     <li className="menu">
-                        <ul>Dashboard</ul>
-                        <ul>Search</ul>
-                        <ul>Setting</ul>
+                        <Link to='/' exact='true'><ul>Dashboard</ul></Link>
+                        <Link to='/search' exact='true'><ul>Search</ul></Link>
                         <ul className="current-user-name">Ethan Anderson</ul>
                     </li>
                 </div>
