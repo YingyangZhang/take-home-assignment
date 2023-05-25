@@ -53,6 +53,10 @@ img {
 /* ---------- Header ---------- */
 
 .header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   color: #fff;
   padding: 2.5rem;
   z-index: 100;
