@@ -409,6 +409,10 @@ img {
   text-align: right;
 }
 
+.message-container-right .user {
+  justify-content: flex-end;
+}
+
 .content-left,
 .content-right {
   color: #fff;
