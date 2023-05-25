@@ -57,8 +57,8 @@ export default function Dashboard() {
 
                             <div className="message-objects">
                                 <div className="user">
-                                    <span>{conv.messages[conv.messages.length - 1].sender.slice(0,1)}</span>
-                                    <p>{conv.messages[conv.messages.length - 1].sender}</p>
+                                    <span>{conv.participants[1].slice(0,1)}</span>
+                                    <p>{conv.participants[1]}</p>
                                 </div>
 
                                 <div className="time">11:20</div>
